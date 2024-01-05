@@ -7,7 +7,27 @@ use App\Http\Controllers\PersonneController;
 
 use App\Http\Controllers\Product4Controller;
 
-use App\Http\Controllers\CustomAuthController;        //11111111111111111111111111111111111111
+use App\Http\Controllers\CustomAuthController; 
+
+use App\Http\Controllers\Product1Controller;
+use App\Http\Controllers\Product5Controller;
+//product5
+Route::get('/product5', [Product5Controller::class, 'index'])->name('product5.index');
+Route::get('/product5/create', [Product5Controller::class, 'create'])->name('product5.create');
+Route::post('/product5', [Product5Controller::class, 'store'])->name('product5.store');
+Route::get('/product5/{product5}/edit', [Product5Controller::class, 'edit'])->name('product5.edit');
+Route::put('/product5/{product5}/update', [Product5Controller::class, 'update'])->name('product5.update');
+Route::delete('/product5/{product5}/destroy', [Product5Controller::class, 'destroy'])->name('product5.destroy');
+
+//produit1
+Route::get('/product1', [Product1Controller::class, 'index'])->name('product1.index');
+Route::get('/product1/create', [Product1Controller::class, 'create'])->name('product1.create');
+Route::post('/product1', [Product1Controller::class, 'store'])->name('product1.store');
+Route::get('/product1/{product1}/edit', [Product1Controller::class, 'edit'])->name('product1.edit');
+Route::put('/product1/{product1}/update', [Product1Controller::class, 'update'])->name('product1.update');
+Route::delete('/product1/{product1}/destroy', [Product1Controller::class, 'destroy'])->name('product1.destroy');
+
+//11111111111111111111111111111111111111
 
 Route::get('/dashboard',[CustomAuthController::class,'dashboard'])->middleware('isLoggedIn');  
 Route::get('/login',[CustomAuthController::class,'login'])->middleware('alreadyLoggedIn');
