@@ -6,6 +6,18 @@ use App\Http\Controllers\Product2Controller;
 use App\Http\Controllers\PersonneController;
 
 use App\Http\Controllers\Product4Controller;
+
+use App\Http\Controllers\CustomAuthController;        //11111111111111111111111111111111111111
+
+Route::get('/dashboard',[CustomAuthController::class,'dashboard'])->middleware('isLoggedIn');  
+Route::get('/login',[CustomAuthController::class,'login'])->middleware('alreadyLoggedIn');
+Route::get('/login',[CustomAuthController::class,'login'])->middleware('alreadyLoggedIn');               //Route::get('/login',[CustomAuthController::class,'login']);         // 111111111111111111
+Route::get('/registration',[CustomAuthController::class,'registration'])->middleware('alreadyLoggedIn'); //Route::get('/registration',[CustomAuthController::class,'registration']);   // 11111111111
+Route::post('/register-user',[CustomAuthController::class,'registerUser'])->name('register-user');       //222222222222222222222222222222
+Route::post('/login-user',[CustomAuthController::class,'loginUser'])->name('login-user');                //4444444444444444444444
+Route::get('/dashboard',[CustomAuthController::class,'dashboard'])->middleware('isLoggedIn');            //Route::get('/dashboard',[CustomAuthController::class,'dashboard']);
+Route::get('/logout',[CustomAuthController::class,'logout']);
+//
 Route::get('/product4', [Product4Controller::class, 'index'])->name('product4.index');
 Route::get('/product4/create', [Product4Controller::class, 'create'])->name('product4.create');
 Route::post('/product4', [Product4Controller::class, 'store'])->name('product4.store');
