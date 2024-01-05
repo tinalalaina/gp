@@ -5,6 +5,15 @@ use App\Http\Controllers\Product3Controller;
 use App\Http\Controllers\Product2Controller;
 use App\Http\Controllers\PersonneController;
 
+use App\Http\Controllers\Product4Controller;
+Route::get('/product4', [Product4Controller::class, 'index'])->name('product4.index');
+Route::get('/product4/create', [Product4Controller::class, 'create'])->name('product4.create');
+Route::post('/product4', [Product4Controller::class, 'store'])->name('product4.store');
+Route::get('/product4/{product4}/edit', [Product4Controller::class, 'edit'])->name('product4.edit');
+Route::put('/product4/{product4}/update', [Product4Controller::class, 'update'])->name('product4.update');
+Route::delete('/product4/{product4}/destroy', [Product4Controller::class, 'destroy'])->name('product4.destroy');
+
+
 Route::get('/personne/rechercher-personnes', [PersonneController::class, 'searchForm'])->name('rechercher_personnes');
 Route::post('/personne/resultats-recherche', [PersonneController::class, 'searchResults'])->name('resultats_recherche');
 
@@ -30,3 +39,8 @@ Route::post('/product3', [Product3Controller::class, 'store'])->name('product3.s
 Route::get('/product3/{product3}/edit', [Product3Controller::class, 'edit'])->name('product3.edit');
 Route::put('/product3/{product3}/update', [Product3Controller::class, 'update'])->name('product3.update');
 Route::delete('/product3/{product3}/destroy', [Product3Controller::class, 'destroy'])->name('product3.destroy');
+
+
+Route::get('/products', function () {
+    return view('products.index'); //( dossier products + fichier index.blade.php)
+    });

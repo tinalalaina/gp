@@ -1,5 +1,5 @@
-<h1>Savon</h1>
-<form method="post" action="{{route('product2.store')}}">
+<h1>Huille</h1>
+<form method="post" action="{{route('product4.store')}}">
     @csrf 
     @method('post')
         <div>
@@ -19,8 +19,8 @@
             <input type="text" name="description" placeholder="Description" />
         </div>
         <div>
-            <input type="submit" value="Save a New Product2" />
+            <input type="submit" value="Save a New Product4" />
         </div>
     </form>
     <hr>
-    <a href="/product2">lister les produits</a>
+    <a href="/product4">lister les produits</a>

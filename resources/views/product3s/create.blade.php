@@ -1,4 +1,4 @@
-<h1>Create a Product3</h1>
+<h1>Creer une Cigarette</h1>
 <form method="post" action="{{route('product3.store')}}">
     @csrf 
     @method('post')

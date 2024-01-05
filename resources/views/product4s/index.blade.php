@@ -1,10 +1,11 @@
 <body>
-    <h1>Savon</h1>
+    <h1>Huille</h1>
     
     <div>
     
         <table border="1">
             <tr>
+                <th>ID</th>
                 <th>Name</th>
                 <th>Qty</th>
                 <th>Price</th>
@@ -12,18 +13,18 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product2s as $product2 )
+            @foreach($product4s as $product4 )
                 <tr>
-                    
-                    <td>{{$product2->name}}</td>
-                    <td>{{$product2->qty}}</td>
-                    <td>{{$product2->price}}</td>
-                    <td>{{$product2->description}}</td>
+                    <td>{{$product4->id}}</td>
+                    <td>{{$product4->name}}</td>
+                    <td>{{$product4->qty}}</td>
+                    <td>{{$product4->price}}</td>
+                    <td>{{$product4->description}}</td>
                     <td>
-                       <a href="{{route('product2.edit', ['product2' => $product2])}}">Edit</a>
+                       <a href="{{route('product4.edit', ['product4' => $product4])}}">Edit</a>
                     </td>
                     <td>
-                        <form method="post" action="{{route('product2.destroy', ['product2' => $product2])}}">
+                        <form method="post" action="{{route('product4.destroy', ['product4' => $product4])}}">
                             @csrf 
                             @method('delete')
                             <input type="submit" value="Delete" />
@@ -34,7 +35,7 @@
 
         </table>
         <hr>
-        <a href="/product2/create">creer un produit</a><br>
+        <a href="/product4/create">creer un produit</a> <br>
         <a href="/products">Revenir à liste des produits</a>
     </div>
 </body>

@@ -21,3 +21,8 @@
 
 <hr>
 @endforeach
+
+<br>
+<a href="/personne/ajouter-personne">ajouter</a>
+<br>
+<a href="/products">Revenir à liste des produits</a>
