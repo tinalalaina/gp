@@ -22,5 +22,6 @@
             <input type="submit" value="Save a New Product2" />
         </div>
     </form>
-    <hr>
-    <a href="/product2">lister les produits</a>
+    
+<br>
+<a href="/dashboard">Home</a>

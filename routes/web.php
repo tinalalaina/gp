@@ -52,8 +52,6 @@ Route::get('/product3/{product3}/edit', [Product3Controller::class, 'edit'])->na
 Route::put('/product3/{product3}/update', [Product3Controller::class, 'update'])->name('product3.update')->middleware('isLoggedIn');
 Route::delete('/product3/{product3}/destroy', [Product3Controller::class, 'destroy'])->name('product3.destroy')->middleware('isLoggedIn');
 
-
-Route::get('/products', function () {
-    return view('products.index');
-    
-    });
+    Route::get('/', function () {
+        return view('index'); //( dossier products + fichier index.blade.php)
+        });

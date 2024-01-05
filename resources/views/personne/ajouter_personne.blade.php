@@ -14,3 +14,6 @@
 
     <button type="submit">Enregistrer</button>
 </form>
+
+<br>
+<a href="/dashboard">Home</a>

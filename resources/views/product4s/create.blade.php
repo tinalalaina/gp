@@ -24,3 +24,6 @@
     </form>
     <hr>
     <a href="/product4">lister les produits</a>
+    
+<br>
+<a href="/dashboard">Home</a>

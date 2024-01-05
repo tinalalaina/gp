@@ -11,3 +11,6 @@
         <hr>
     @endforeach
 @endif
+
+<br>
+<a href="/dashboard">Home</a>

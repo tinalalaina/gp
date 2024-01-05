@@ -16,3 +16,6 @@
 
     <button type="submit">Enregistrer les modifications</button>
 </form>
+
+<br>
+<a href="/dashboard">Home</a>

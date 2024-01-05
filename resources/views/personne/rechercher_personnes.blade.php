@@ -10,3 +10,6 @@
 
     <button type="submit">Rechercher</button>
 </form>
+
+<br>
+<a href="/dashboard">Home</a>

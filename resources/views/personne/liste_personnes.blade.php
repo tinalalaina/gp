@@ -2,10 +2,10 @@
 <hr>
 <hr>
 
-<h1>Liste des personnes</h1>
+<h1>Liste des Produits</h1>
 
 @foreach($personnes as $personne)
-<p>Nom: {{ $personne->nom }}, Prénom: {{ $personne->prenom }}</p>
+<p>Name: {{ $personne->nom }}, <br> Description: {{ $personne->prenom }}</p>
     
 @if($personne->photo)
     <img src="{{ asset('storage/' . $personne->photo) }}" alt="Photo de {{ $personne->prenom }}">
@@ -25,4 +25,4 @@
 <br>
 <a href="/personne/ajouter-personne">ajouter</a>
 <br>
-<a href="/products">Revenir à liste des produits</a>
+<a href="/dashboard">Home</a>
