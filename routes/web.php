@@ -11,6 +11,15 @@ use App\Http\Controllers\CustomAuthController;
 
 use App\Http\Controllers\Product1Controller;
 use App\Http\Controllers\Product5Controller;
+use App\Http\Controllers\Product6Controller;
+//produit6
+Route::get('/product6', [Product6Controller::class, 'index'])->name('product6.index');
+Route::get('/product6/create', [Product6Controller::class, 'create'])->name('product6.create');
+Route::post('/product6', [Product6Controller::class, 'store'])->name('product6.store');
+Route::get('/product6/{product6}/edit', [Product6Controller::class, 'edit'])->name('product6.edit');
+Route::put('/product6/{product6}/update', [Product6Controller::class, 'update'])->name('product6.update');
+Route::delete('/product6/{product6}/destroy', [Product6Controller::class, 'destroy'])->name('product6.destroy');
+
 //product5
 Route::get('/product5', [Product5Controller::class, 'index'])->name('product5.index');
 Route::get('/product5/create', [Product5Controller::class, 'create'])->name('product5.create');
