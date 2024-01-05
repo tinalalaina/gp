@@ -1,5 +1,5 @@
 <body>
-    <h1> Vary</h1>
+    <h1>Pate</h1>
     
     <div>
     
@@ -12,17 +12,17 @@
                 <th>Edit</th>
                 <th>Delete</th>
             </tr>
-            @foreach($product1s as $product1 )
+            @foreach($product7s as $Product7 )
                 <tr>
-                    <td>{{$product1->name}}</td>
-                    <td>{{$product1->qty}}</td>
-                    <td>{{$product1->price}}</td>
-                    <td>{{$product1->description}}</td>
+                    <td>{{$Product7->name}}</td>
+                    <td>{{$Product7->qty}}</td>
+                    <td>{{$Product7->price}}</td>
+                    <td>{{$Product7->description}}</td>
                     <td>
-                       <a href="{{route('product1.edit', ['product1' => $product1])}}">Edit</a>
+                       <a href="{{route('Product7.edit', ['Product7' => $Product7])}}">Edit</a>
                     </td>
                     <td>
-                        <form method="post" action="{{route('product1.destroy', ['product1' => $product1])}}">
+                        <form method="post" action="{{route('Product7.destroy', ['Product7' => $Product7])}}">
                             @csrf 
                             @method('delete')
                             <input type="submit" value="Delete" />
@@ -33,7 +33,7 @@
 
         </table>
         <hr>
-        <a href="/product1/create">creer un produit</a>
-    </div><br>
-    <a href="/dashboard">retour</a>
+        <a href="/Product7/create">creer un produit</a><br>
+        <a href="/dashboard">retour</a>
+    </div>
 </body>

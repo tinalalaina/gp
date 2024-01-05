@@ -1,4 +1,4 @@
-<h1>Create a Product1</h1>
+<h1>Vary</h1>
 <form method="post" action="{{route('product1.store')}}">
     @csrf 
     @method('post')

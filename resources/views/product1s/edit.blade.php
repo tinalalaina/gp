@@ -1,5 +1,5 @@
 <body>
-    <h1>Edit a Product1</h1>
+    <h1>Vary</h1>
    
     <form method="post" action="{{route('product1.update', ['product1' => $product1])}}">
         @csrf 

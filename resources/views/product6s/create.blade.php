@@ -1,4 +1,4 @@
-<h1>Create a Product6</h1>
+<h1>Couche</h1>
 <form method="post" action="{{route('product6.store')}}">
     @csrf 
     @method('post')
@@ -23,4 +23,5 @@
         </div>
     </form>
     <hr>
-    <a href="/product6">lister les produits</a>
+    <a href="/product6">lister les produits</a><br>
+    <a href="/dashboard">retour</a>

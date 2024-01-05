@@ -9,11 +9,17 @@
     <hr>
 
     <h1>Product list</h1>
+    <a href="/product1">Vary</a>
     <br>
-    <a href="/product2">Savon</a>
+    <a href="/product2">Savon ET Bougie</a>
     <br>
     <a href="/product3">Cigarette</a>
     <br>
     <a href="/product4">Huille</a>
+    <br>
+    <a href="/product5">Biscuit et autre en sachet</a>    <br>
+    <a href="/product6">Couche</a>
+    <br>
+    <a href="/Product7">Pate</a>
     <br>
     <a href="/personne/liste-personnes">photo facture</a>

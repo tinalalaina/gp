@@ -1,5 +1,5 @@
-<h1>Savon ou Bougie</h1>
-<form method="post" action="{{route('product2.store')}}">
+<h1>Create a Product7</h1>
+<form method="post" action="{{route('Product7.store')}}">
     @csrf 
     @method('post')
         <div>
@@ -19,9 +19,8 @@
             <input type="text" name="description" placeholder="Description" />
         </div>
         <div>
-            <input type="submit" value="Save a New Product2" />
+            <input type="submit" value="Save a New Product7" />
         </div>
     </form>
-    
-<br>
-<a href="/dashboard">Home</a>
+    <hr>
+    <a href="/Product7">lister les produits</a>

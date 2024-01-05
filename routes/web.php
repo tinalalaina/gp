@@ -12,29 +12,38 @@ use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\Product1Controller;
 use App\Http\Controllers\Product5Controller;
 use App\Http\Controllers\Product6Controller;
+use App\Http\Controllers\product7Controller;
+//produit7
+Route::get('/Product7', [product7Controller::class, 'index'])->name('Product7.index')->middleware('isLoggedIn');
+Route::get('/Product7/create', [product7Controller::class, 'create'])->name('Product7.create')->middleware('isLoggedIn');
+Route::post('/Product7', [product7Controller::class, 'store'])->name('Product7.store')->middleware('isLoggedIn');
+Route::get('/Product7/{Product7}/edit', [product7Controller::class, 'edit'])->name('Product7.edit')->middleware('isLoggedIn');
+Route::put('/Product7/{Product7}/update', [product7Controller::class, 'update'])->name('Product7.update')->middleware('isLoggedIn');
+Route::delete('/Product7/{Product7}/destroy', [product7Controller::class, 'destroy'])->name('Product7.destroy')->middleware('isLoggedIn');
+
 //produit6
-Route::get('/product6', [Product6Controller::class, 'index'])->name('product6.index');
-Route::get('/product6/create', [Product6Controller::class, 'create'])->name('product6.create');
-Route::post('/product6', [Product6Controller::class, 'store'])->name('product6.store');
-Route::get('/product6/{product6}/edit', [Product6Controller::class, 'edit'])->name('product6.edit');
-Route::put('/product6/{product6}/update', [Product6Controller::class, 'update'])->name('product6.update');
-Route::delete('/product6/{product6}/destroy', [Product6Controller::class, 'destroy'])->name('product6.destroy');
+Route::get('/product6', [Product6Controller::class, 'index'])->name('product6.index')->middleware('isLoggedIn');
+Route::get('/product6/create', [Product6Controller::class, 'create'])->name('product6.create')->middleware('isLoggedIn');
+Route::post('/product6', [Product6Controller::class, 'store'])->name('product6.store')->middleware('isLoggedIn');
+Route::get('/product6/{product6}/edit', [Product6Controller::class, 'edit'])->name('product6.edit')->middleware('isLoggedIn');
+Route::put('/product6/{product6}/update', [Product6Controller::class, 'update'])->name('product6.update')->middleware('isLoggedIn');
+Route::delete('/product6/{product6}/destroy', [Product6Controller::class, 'destroy'])->name('product6.destroy')->middleware('isLoggedIn');
 
 //product5
-Route::get('/product5', [Product5Controller::class, 'index'])->name('product5.index');
-Route::get('/product5/create', [Product5Controller::class, 'create'])->name('product5.create');
-Route::post('/product5', [Product5Controller::class, 'store'])->name('product5.store');
-Route::get('/product5/{product5}/edit', [Product5Controller::class, 'edit'])->name('product5.edit');
-Route::put('/product5/{product5}/update', [Product5Controller::class, 'update'])->name('product5.update');
-Route::delete('/product5/{product5}/destroy', [Product5Controller::class, 'destroy'])->name('product5.destroy');
+Route::get('/product5', [Product5Controller::class, 'index'])->name('product5.index')->middleware('isLoggedIn');
+Route::get('/product5/create', [Product5Controller::class, 'create'])->name('product5.create')->middleware('isLoggedIn');
+Route::post('/product5', [Product5Controller::class, 'store'])->name('product5.store')->middleware('isLoggedIn');
+Route::get('/product5/{product5}/edit', [Product5Controller::class, 'edit'])->name('product5.edit')->middleware('isLoggedIn');
+Route::put('/product5/{product5}/update', [Product5Controller::class, 'update'])->name('product5.update')->middleware('isLoggedIn');
+Route::delete('/product5/{product5}/destroy', [Product5Controller::class, 'destroy'])->name('product5.destroy')->middleware('isLoggedIn');
 
 //produit1
-Route::get('/product1', [Product1Controller::class, 'index'])->name('product1.index');
-Route::get('/product1/create', [Product1Controller::class, 'create'])->name('product1.create');
-Route::post('/product1', [Product1Controller::class, 'store'])->name('product1.store');
-Route::get('/product1/{product1}/edit', [Product1Controller::class, 'edit'])->name('product1.edit');
-Route::put('/product1/{product1}/update', [Product1Controller::class, 'update'])->name('product1.update');
-Route::delete('/product1/{product1}/destroy', [Product1Controller::class, 'destroy'])->name('product1.destroy');
+Route::get('/product1', [Product1Controller::class, 'index'])->name('product1.index')->middleware('isLoggedIn');
+Route::get('/product1/create', [Product1Controller::class, 'create'])->name('product1.create')->middleware('isLoggedIn');
+Route::post('/product1', [Product1Controller::class, 'store'])->name('product1.store')->middleware('isLoggedIn');
+Route::get('/product1/{product1}/edit', [Product1Controller::class, 'edit'])->name('product1.edit')->middleware('isLoggedIn');
+Route::put('/product1/{product1}/update', [Product1Controller::class, 'update'])->name('product1.update')->middleware('isLoggedIn');
+Route::delete('/product1/{product1}/destroy', [Product1Controller::class, 'destroy'])->name('product1.destroy')->middleware('isLoggedIn');
 
 //11111111111111111111111111111111111111
 

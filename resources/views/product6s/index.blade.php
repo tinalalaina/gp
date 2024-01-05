@@ -1,11 +1,10 @@
 <body>
-    <h1>Product6</h1>
+    <h1>Couche</h1>
     
     <div>
     
         <table border="1">
             <tr>
-                <th>ID</th>
                 <th>Name</th>
                 <th>Qty</th>
                 <th>Price</th>
@@ -15,7 +14,6 @@
             </tr>
             @foreach($product6s as $product6 )
                 <tr>
-                    <td>{{$product6->id}}</td>
                     <td>{{$product6->name}}</td>
                     <td>{{$product6->qty}}</td>
                     <td>{{$product6->price}}</td>
@@ -36,5 +34,6 @@
         </table>
         <hr>
         <a href="/product6/create">creer un produit</a>
-    </div>
+    </div><br>
+    <a href="/dashboard">retour</a>
 </body>
