@@ -14,6 +14,15 @@ use App\Http\Controllers\Product5Controller;
 use App\Http\Controllers\Product6Controller;
 use App\Http\Controllers\product7Controller;
 use App\Http\Controllers\Product8Controller;
+use App\Http\Controllers\Product9Controller;
+//produit9
+Route::get('/product9', [Product9Controller::class, 'index'])->name('product9.index');
+Route::get('/product9/create', [Product9Controller::class, 'create'])->name('product9.create');
+Route::post('/product9', [Product9Controller::class, 'store'])->name('product9.store');
+Route::get('/product9/{product9}/edit', [Product9Controller::class, 'edit'])->name('product9.edit');
+Route::put('/product9/{product9}/update', [Product9Controller::class, 'update'])->name('product9.update');
+Route::delete('/product9/{product9}/destroy', [Product9Controller::class, 'destroy'])->name('product9.destroy');
+
 //produit8
 Route::get('/product8', [Product8Controller::class, 'index'])->name('product8.index');
 Route::get('/product8/create', [Product8Controller::class, 'create'])->name('product8.create');
