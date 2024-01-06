@@ -13,6 +13,15 @@ use App\Http\Controllers\Product1Controller;
 use App\Http\Controllers\Product5Controller;
 use App\Http\Controllers\Product6Controller;
 use App\Http\Controllers\product7Controller;
+use App\Http\Controllers\Product8Controller;
+//produit8
+Route::get('/product8', [Product8Controller::class, 'index'])->name('product8.index');
+Route::get('/product8/create', [Product8Controller::class, 'create'])->name('product8.create');
+Route::post('/product8', [Product8Controller::class, 'store'])->name('product8.store');
+Route::get('/product8/{product8}/edit', [Product8Controller::class, 'edit'])->name('product8.edit');
+Route::put('/product8/{product8}/update', [Product8Controller::class, 'update'])->name('product8.update');
+Route::delete('/product8/{product8}/destroy', [Product8Controller::class, 'destroy'])->name('product8.destroy');
+
 //produit7
 Route::get('/Product7', [product7Controller::class, 'index'])->name('Product7.index')->middleware('isLoggedIn');
 Route::get('/Product7/create', [product7Controller::class, 'create'])->name('Product7.create')->middleware('isLoggedIn');
