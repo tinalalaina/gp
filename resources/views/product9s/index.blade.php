@@ -5,7 +5,6 @@
     
         <table border="1">
             <tr>
-                <th>ID</th>
                 <th>Name</th>
                  <th>FirstName</th>
                 <th>Qty</th>
@@ -16,7 +15,6 @@
             </tr>
             @foreach($product9s as $product9 )
                 <tr>
-                    <td>{{$product9->id}}</td>
                     <td>{{$product9->name}}</td>
                     <td>{{$product9->firstname}}</td>
                     <td>{{$product9->qty}}</td>
@@ -37,6 +35,7 @@
 
         </table>
         <hr>
-        <a href="/product9/create">creer un produit</a>
+        <a href="/product9/create">creer un produit</a><br>
+        <a href="/dashboard">retour</a>
     </div>
 </body>

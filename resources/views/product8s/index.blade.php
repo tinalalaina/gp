@@ -35,6 +35,7 @@
 
         </table>
         <hr>
-        <a href="/product8/create">creer un produit</a>
+        <a href="/product8/create">creer un produit</a><br>
+        <a href="/dashboard">retour</a>
     </div>
 </body>

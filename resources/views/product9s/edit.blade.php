@@ -27,6 +27,7 @@
         <div>
             <input type="submit" value="Update" />
         </div>
-    </form>
+    </form><br>
+    <a href="/dashboard">Home</a>
 </body>
 </html>

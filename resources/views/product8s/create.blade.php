@@ -23,4 +23,5 @@
         </div>
     </form>
     <hr>
-    <a href="/product8">lister les produits</a>
+    <a href="/product8">lister les produits</a><br>
+    <a href="/dashboard">Home</a>
