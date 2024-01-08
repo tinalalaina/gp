@@ -178,20 +178,20 @@
     return elementIsVisible;
   };
 
-  const isDisabled = element => {
+  const is = element => {
     if (!element || element.nodeType !== Node.ELEMENT_NODE) {
       return true;
     }
 
-    if (element.classList.contains('disabled')) {
+    if (element.classList.contains('')) {
       return true;
     }
 
-    if (typeof element.disabled !== 'undefined') {
-      return element.disabled;
+    if (typeof element. !== 'undefined') {
+      return element.;
     }
 
-    return element.hasAttribute('disabled') && element.getAttribute('disabled') !== 'false';
+    return element.hasAttribute('') && element.getAttribute('') !== 'false';
   };
 
   const findShadowRoot = element => {
@@ -890,7 +890,7 @@
         event.preventDefault();
       }
 
-      if (isDisabled(this)) {
+      if (is(this)) {
         return;
       }
 
@@ -1109,7 +1109,7 @@
 
     focusableChildren(element) {
       const focusables = ['a', 'button', 'input', 'textarea', 'select', 'details', '[tabindex]', '[contenteditable="true"]'].map(selector => `${selector}:not([tabindex^="-"])`).join(',');
-      return this.find(focusables, element).filter(el => !isDisabled(el) && isVisible(el));
+      return this.find(focusables, element).filter(el => !is(el) && isVisible(el));
     }
 
   };
@@ -2021,12 +2021,12 @@
   const CLASS_NAME_DROPSTART = 'dropstart';
   const CLASS_NAME_DROPUP_CENTER = 'dropup-center';
   const CLASS_NAME_DROPDOWN_CENTER = 'dropdown-center';
-  const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]:not(.disabled):not(:disabled)';
+  const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]:not(.):not(:)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE$3}.${CLASS_NAME_SHOW$6}`;
   const SELECTOR_MENU = '.dropdown-menu';
   const SELECTOR_NAVBAR = '.navbar';
   const SELECTOR_NAVBAR_NAV = '.navbar-nav';
-  const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
+  const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.):not(:)';
   const PLACEMENT_TOP = isRTL() ? 'top-end' : 'top-start';
   const PLACEMENT_TOPEND = isRTL() ? 'top-start' : 'top-end';
   const PLACEMENT_BOTTOM = isRTL() ? 'bottom-end' : 'bottom-start';
@@ -2085,7 +2085,7 @@
     }
 
     show() {
-      if (isDisabled(this._element) || this._isShown()) {
+      if (is(this._element) || this._isShown()) {
         return;
       }
 
@@ -2122,7 +2122,7 @@
     }
 
     hide() {
-      if (isDisabled(this._element) || !this._isShown()) {
+      if (is(this._element) || !this._isShown()) {
         return;
       }
 
@@ -3405,7 +3405,7 @@
       event.preventDefault();
     }
 
-    if (isDisabled(this)) {
+    if (is(this)) {
       return;
     }
 
@@ -4616,8 +4616,8 @@
       const targetLinks = SelectorEngine.find(SELECTOR_TARGET_LINKS, this._config.target);
 
       for (const anchor of targetLinks) {
-        // ensure that the anchor has an id and is not disabled
-        if (!anchor.hash || isDisabled(anchor)) {
+        // ensure that the anchor has an id and is not 
+        if (!anchor.hash || is(anchor)) {
           continue;
         }
 
@@ -4869,7 +4869,7 @@
 
       event.preventDefault();
       const isNext = [ARROW_RIGHT_KEY, ARROW_DOWN_KEY].includes(event.key);
-      const nextActiveElement = getNextActiveElement(this._getChildren().filter(element => !isDisabled(element)), event.target, isNext, true);
+      const nextActiveElement = getNextActiveElement(this._getChildren().filter(element => !is(element)), event.target, isNext, true);
 
       if (nextActiveElement) {
         Tab.getOrCreateInstance(nextActiveElement).show();
@@ -4999,7 +4999,7 @@
       event.preventDefault();
     }
 
-    if (isDisabled(this)) {
+    if (is(this)) {
       return;
     }
 

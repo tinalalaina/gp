@@ -8,98 +8,57 @@
 <a href="/login">Login</a>
 <br>
 <a href="/registration">register</a>
--->
-<nav class="navbar navbar-light bg-dark">
-    
-<div class="container-fluid">
-      <a class="navbar-brand "> <h1>GSPD</h1></a>
-      <form class="d-flex">
-        <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success " type="submit">Search</button>
-      </form>
-      <form class="d-flex">
-        <a href="/login" class="btn btn-secondary">Se connecter</a>
-      </form>
-    
-  </nav>
 
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-  </ul>
-
-
- 
-  
-  
-    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-    <div class="row">
-      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-    </div>
-  
-    <!-- Columns are always 50% wide, on mobile and desktop -->
-    <div class="row">
-      <div class="col-6">.col-6</div>
-      <div class="col-6">.col-6</div>
-    </div>
-    <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-    
-      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-      <div class="row">
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-      </div>
-    
-      <!-- Columns are always 50% wide, on mobile and desktop -->
-      <div class="row">
-        <div class="col-6">.col-6</div>
-        <div class="col-6">.col-6</div>
-      </div>
-      <div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  <img class="w3-image" src="{{asset('images/panier1.PNG')}}" alt="Me">
+    -->
+    <style>
+      body {font-family: "Raleway", Arial, sans-serif}
+      .w3-row img {margin-bottom: -8px}
+      .im{
+        filter: blur(5px)
+      }
+      .text{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: rgb(24, 39, 41);
+        font-size: 30px;
+      
+      }
+      </style>
+      <body>
+        <center>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-content" style="max-width:1500px">
+      
+        <!-- Header -->
+        <header class="w3-container w3-xlarge w3-padding-24">
+        <br><br>
+          
+        </header>
+      
+        <!-- Photo Grid -->
+        <div class="w3-row">
+            <img class="im" src="{{asset('images/panier1.PNG')}}" alt="Me" style="width:100%">
+            <div class="text">Optimisez votre espace avec nos solution de stockage innovantes <br>pour organiser votre vie quotidienne
+              <br>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <br><br>
+                <a href="/enregistrements" class="btn btn-success">Visitez</a>
+                <br><br>
+                <a href="/login" class="btn btn-primary">Connectez</a>
+               
+            </div>
         </div>
-
-
-  </div>
+        
+      <!-- End Page Content -->
+      </div>
+      
+    </center>
+      </body>
+      
+      
     
+
 @endsection

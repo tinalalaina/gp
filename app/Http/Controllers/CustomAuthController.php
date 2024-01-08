@@ -44,7 +44,7 @@ if(Hash::check($request->password, $user->password)){
     return redirect('dashboard');
 
 }else{
-    return back()->with('fail', 'passwor not matches ');
+    return back()->with('fail', 'Mot de passe invalide ');
 }
     }else {
         return back()->with('fail', 'this email is not registered ');
