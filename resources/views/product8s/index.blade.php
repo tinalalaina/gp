@@ -43,7 +43,7 @@
         <a class="nav-link" href="/product6">Produit6</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/product7">Produit7</a>
+        <a class="nav-link disabled" href="/product7">Produit7</a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="/product8">Produit8</a>
@@ -58,7 +58,7 @@
 
   
 
-     <center><h2>Produit1</h2></center>
+     <center><h2>Produit1</h2></center><br> <a type="button" class="btn btn-outline-primary" href="/product8/create">Ajouter un produit</a><br><br>
 
     <table class="table table-bordered">
       <thead>

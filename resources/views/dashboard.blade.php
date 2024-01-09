@@ -24,7 +24,7 @@
         <nav class="navbar navbar-light bg-dark">
     
           <div class="container-fluid">
-                <a class="navbar-brand "> <h1>GSPD</h1></a>
+                <a class="navbar-brand btn-outline-primary "href="/dashboard"> <h1>GSPD</h1></a>
                 <form class="d-flex">
                   <p class="btn btn-outline-success " type="submit"> {{$data->name}}</p>
                 </form>

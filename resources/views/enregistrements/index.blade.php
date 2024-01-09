@@ -12,7 +12,7 @@
 <nav class="navbar navbar-light bg-dark">
     
 <div class="container-fluid">
-      <a class="navbar-brand "> <h1>GSPD</h1></a>
+  <a href="/dashboard" class="btn btn-secondary"> <h1>GSPD</h1></a>
       <form class="d-flex">
         <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success " type="submit">Search</button>
@@ -28,7 +28,7 @@
 
   
 
-     <center><h2>Produit1</h2></center>
+     <center><h2>Produit1</h2></center><br> 
 
     <table class="table table-bordered">
       <thead>
@@ -55,7 +55,7 @@
 
 
 
-    <center><h2>Produit2</h2></center>
+    <center><h2>Produit2</h2></center><br> 
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -79,7 +79,7 @@
         </tbody>
       </table>
 
-      <center><h2>Produit3</h2></center>
+      <center><h2>Produit3</h2></center><br> 
       <table class="table table-bordered">
         <thead>
           <tr  class="table-primary">
@@ -103,7 +103,7 @@
       </tbody>
     </table>
 
-    <center><h2>Produit4</h2></center>
+    <center><h2>Produit4</h2></center><br>
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -127,7 +127,7 @@
     </tbody>
   </table>
 
-  <center><h2>Produit5</h2></center>
+  <center><h2>Produit5</h2></center><br> 
   <table class="table table-bordered">
     <thead>
       <tr  class="table-primary">
@@ -151,7 +151,7 @@
       </tbody>
     </table>
 
-    <center><h2>Produit6</h2></center>
+    <center><h2>Produit6</h2></center><br> 
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -175,7 +175,7 @@
       </tbody>
     </table>  
 
-    <center><h2>Produit7</h2></center>
+    <center><h2>Produit7</h2></center><br>
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -199,7 +199,7 @@
       </tbody>
     </table>
 
-    <center><h2>Produit8</h2></center>
+    <center><h2>Produit8</h2></center><br> 
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -222,7 +222,7 @@
     @endforeach
       </tbody>
     </table>
-    <center><h2>Produit9</h2></center>
+    <center><h2>Produit9</h2></center><br> 
     <table class="table table-bordered">
       <thead>
         <tr  class="table-primary">
@@ -240,6 +240,7 @@
             <td>{{$product9->qty}}</td>
             <td>{{$product9->price}}</td>
             <td>{{$product9->description}}</td>
+            
             
         </tr>
     @endforeach

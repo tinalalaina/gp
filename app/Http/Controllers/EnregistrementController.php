@@ -29,4 +29,14 @@ class EnregistrementController extends Controller
         
         return view('enregistrements.index', compact('product1s', 'product2s','product3s','product4s','product5s','product6s','product7s','product8s','product9s',));
     }
+    public function searchResults(Request $request)
+{
+    $nom = $request->input('nom');
+
+    $resultats = DB::table('product1s', 'product2s','product3s','product4s','product5s','product6s','product7s','product8s','product9s')
+        ->where('nom', 'LIKE', '%' . $nom . '%')
+        ->get();
+
+    return view('resultats_recherche', compact('resultats'));
+}
 }
