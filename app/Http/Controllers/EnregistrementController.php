@@ -15,28 +15,12 @@ use App\Models\Product9;
 
 class EnregistrementController extends Controller
 {
-    public function index()
-    {
-        $product1s = Product1::all();
-        $product2s = Product2::all();
-        $product3s = Product3::all();
-        $product4s = Product4::all();
-        $product5s = Product5::all();
-        $product6s = Product6::all();
-        $product7s = Product7::all();
-        $product8s = Product8::all();
-        $product9s = Product9::all();
-        
-        return view('enregistrements.index', compact('product1s', 'product2s','product3s','product4s','product5s','product6s','product7s','product8s','product9s',));
-    }
-    public function searchResults(Request $request)
+    
+public function index(Request $request)
 {
-    $nom = $request->input('nom');
+    $product1s =  Product1::where('name', 'like', '%' . $request->input('searchNom', '') . '%')->get();
+    $product2s =  Product2::where('name', 'like', '%' . $request->input('searchNom', '') . '%')->get();
 
-    $resultats = DB::table('product1s', 'product2s','product3s','product4s','product5s','product6s','product7s','product8s','product9s')
-        ->where('nom', 'LIKE', '%' . $nom . '%')
-        ->get();
-
-    return view('resultats_recherche', compact('resultats'));
+    return view('enregistrements.index', compact('product1s', 'product2s'));
 }
 }

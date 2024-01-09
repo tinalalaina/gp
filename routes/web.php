@@ -17,7 +17,8 @@ use App\Http\Controllers\Product8Controller;
 use App\Http\Controllers\Product9Controller;
 use App\Http\Controllers\EnregistrementController;
 
-Route::get('/enregistrements', [EnregistrementController::class, 'index']);
+//Route::get('/enregistrements', [EnregistrementController::class, 'index']);
+  Route::get('/enregistrements', [EnregistrementController::class, 'index'])->name('enregistrements.index');
 //produit9
 Route::get('/product9', [Product9Controller::class, 'index'])->name('product9.index')->middleware('isLoggedIn');
 Route::get('/product9/create', [Product9Controller::class, 'create'])->name('product9.create')->middleware('isLoggedIn');
