@@ -9,14 +9,13 @@
 <br>
 <a href="/registration">register</a>
 -->
-<nav class="navbar navbar-light bg-dark">
+<nav class="navbar navbar-light bg-light">
     
 <div class="container-fluid">
   <a href="/dashboard" class="btn btn-secondary"> <h1>GSPD</h1></a>
-  <form action="{{ route('enregistrements.index') }}" method="GET">
-    <label for="searchNom">Recherche:</label>
-    <input type="text" name="searchNom" value="{{ request('searchNom') }}" placeholder="produit">
-    <button type="submit"class="btn btn-secondary">Rechercher</button>
+<form class="d-flex" action="{{ route('enregistrements.index') }}" method="GET">
+  <input class="form-control me-2"type="text"  name="searchNom" value="{{ request('searchNom') }}" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" for="searchNom" type="submit">Search</button>
 </form>
         <a href="/" class="btn btn-secondary">Retour</a>
       </form>

@@ -9,14 +9,11 @@
 <br>
 <a href="/registration">register</a>
 -->
-<nav class="navbar navbar-light bg-dark">
+<nav class="navbar navbar-light bg-light">
     
 <div class="container-fluid">
       <a class="navbar-brand "> <h1>GSPD</h1></a>
-      <form class="d-flex">
-        <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success " type="submit">Search</button>
-      </form>
+      <h1>GESTION DE PRODUIT <h1>
       <form class="d-flex">
         <a href="logout" class="btn btn-secondary">Déconnection</a>
       </form>
@@ -58,7 +55,7 @@
 
   
 
-     <center><h2>Produit1</h2></center><br> <a type="button" class="btn btn-outline-primary" href="/product7/create">Ajouter un produit</a><br><br>
+     <center><h2>Produit1</h2></center><br> <a type="button" class="btn btn-outline-primary" href="/Product7/create">Ajouter un produit</a><br><br>
 
     <table class="table table-bordered">
       <thead>
@@ -80,10 +77,10 @@
             <td>{{$product7->price}}</td>
             <td>{{$product7->description}}</td>
             <td>
-                <a href="{{route('product7.edit', ['product7' => $product7])}}">Edit</a>
+                <a href="{{route('Product7.edit', ['Product7' => $product7])}}">Edit</a>
              </td>
              <td>
-                 <form method="post" action="{{route('product7.destroy', ['product7' => $product7])}}">
+                 <form method="post" action="{{route('Product7.destroy', ['Product7' => $product7])}}">
                      @csrf 
                      @method('delete')
                      <input type="submit" value="Delete" />

@@ -21,7 +21,7 @@
       </style>
       <body>
 
-        <nav class="navbar navbar-light bg-dark">
+        <nav class="navbar navbar-light bg-light">
     
           <div class="container-fluid">
                 <a class="navbar-brand btn-outline-primary "href="/dashboard"> <h1>GSPD</h1></a>
@@ -38,12 +38,13 @@
       <!-- !PAGE CONTENT! -->
 
       <div class="w3-content" style="max-width:1500px">
-      
+        <a href="enregistrements" type="button" class="btn btn-info">Listes des produit enregistrer</a>
             <img class="im" src="{{asset('images/panier1.PNG')}}" alt="Me" style="width:100%">
             <div class="text"> 
              
 
               <div class="container overflow-hidden">
+                
                 <div class="row gy-5">
                   <div class="col-6">
                     <a  href="/product1"class="p-3 border bg-light">Product 1</a>

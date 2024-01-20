@@ -9,14 +9,11 @@
 <br>
 <a href="/registration">register</a>
 -->
-<nav class="navbar navbar-light bg-dark">
+<nav class="navbar navbar-light bg-light">
     
 <div class="container-fluid">
       <a class="navbar-brand "> <h1>GSPD</h1></a>
-      <form class="d-flex">
-        <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success " type="submit">Search</button>
-      </form>
+      
       <form class="d-flex">
         <a href="logout" class="btn btn-secondary">Déconnection</a>
       </form>
